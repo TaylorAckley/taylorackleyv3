@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  font-size: 18px;
+  --dark: #1a1a1a;
+  --green: #44D7A8;
+  --purple: #9063CD;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary);
+  overflow: hidden;
+}
+
+
+#content {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#content section {
+  padding: 5vh;
+  max-width: 50%;
+  margin-right: 3em;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: scroll;
+  }
+
+  #content {
+    flex-direction: column;
+  }
+
+  #content section {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    #intro {
+      max-width: 75%;
+    }
+}
+
+#intro h1,h2,h3,h4,h5 {
+  font-size: 24px;
+}
+
+#avatar {
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--primary-alt);
+}
+
+#github-link {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2em;
+}
+
+#github-link a img {
+  width: 64px;
+  height: 64px;
+  transition: all .2s ease-in-out;
+}
+
+#github-link a img:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: var(--secondary);
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+
+
+}
+
+a:before {
+  background-color: var(--secondary);
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+  width: 100%;
+}
+
+a:hover {
+}
+
+a:hover:before {
+  width: 0;
+}
