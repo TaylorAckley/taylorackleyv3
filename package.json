@@ -7,6 +7,6 @@
     "serve": "vite preview --host"
   },
   "devDependencies": {
-    "vite": "^2.6.4"
+    "vite": "^2.6.14"
   }
 }

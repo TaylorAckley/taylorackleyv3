@@ -30,33 +30,6 @@ body {
   margin-right: 3em;
 }
 
-
-
-@media screen and (max-width: 1024px) {
-  body {
-    overflow-x: scroll;
-  }
-
-  #content {
-    flex-direction: column;
-    height: unset;
-  }
-
-  #content section {
-    margin: 0;
-    padding: 0;
-    font-size: 0.7em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    }
-
-    #intro {
-      max-width: 75%;
-    }
-}
-
 #intro h1,h2,h3,h4,h5 {
   font-size: 24px;
 }
@@ -111,4 +84,44 @@ a:hover {
 
 a:hover:before {
   width: 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: scroll;
+  }
+
+  #content {
+    flex-direction: column;
+    height: unset;
+  }
+
+  #content section {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    #intro {
+      max-width: 75%;
+    }
+}
+
+@media screen  and (max-width: 768px) {
+  #content section {
+    max-width: unset;
+    padding: 3vh;
+    padding-top: 3em;
+    font-size: 0.5em;
+  }
+  #intro h1,h2,h3,h4,h5 {
+    font-size: 18px;
+  }
 }
